@@ -7,13 +7,22 @@ public class Persona {
         private int edad;
         private double peso, altura;
 
-        public Persona(String nombre, String DNI, String sexo, int edad, double peso, double altura) {
+        public Persona() {
+
+        }
+
+        public Persona(String nombre, String dni, String sexo, int edad, double peso, double altura) {
                 this.nombre = nombre;
-                this.DNI = DNI;
+                this.DNI = dni;
                 this.sexo = sexo;
                 this.edad = edad;
                 this.peso = peso;
                 this.altura = altura;
+        }
+
+        public Persona(String nombre, String dni) {
+                this.nombre = nombre;
+                this.DNI = dni;
         }
 
         public String getNombre() {
@@ -64,9 +73,6 @@ public class Persona {
                 this.altura = altura;
         }
 
-        public Persona() {
-
-        }
 
         public void envejeciendo(){
                 System.out.println("Estas envejeciendo");
